@@ -1,9 +1,6 @@
-																			@@@@@ MILTON LACTURE @@@@@
-																			==========================
-																			  ======================
-																			    ==================
-																				  ==============
-																				    ==========
+										@@@@@ MILTON LACTURE @@@@@
+										==========================
+
 
 
 PARDOT BILLING
@@ -12,27 +9,27 @@ PARDOT BILLING
 # Plus
 # Advanced
 NOTE: Pardot charge as per Contacts like per month up to 10,000 contacts only OR pay.(maybe)
-		SO BE CAUTIOUS TO CHECK/UNCHECK "AUTOMATICALLY CREATE PROSPECT IF THEY ARE CRETAED AS A LEAD OR CONTACT IN SALESFORCE" because we might have more then 10,000 what we are paying for.
-		SO the another way is 
-		GO TO CONNECTED SALESFORCE INSTANCE ---> CREATE A CAMPAIGN---> ADD Campaign Members ----> from Quick ACTION click ---> "ADD TO PARDOT LIST" button
-		
-	## Pardot uses email id to identify the record in salesfoece(or ID)
-		IF we have a prospect in pardot connected to a lead in salesforce, Then even the lead got converted to contact it will automatically got connected to contact.
-		
-		WE Can see detail/ACTIVITY of a prospect from
-		Pardot ---> Prospect ---> Select name --> 
-			Ex: 1. how may time opens up the meail
-				2. since cookies are stored in our website we can even see which our website page prospect visited what time, how much time he spent
-					And based on website page visits(that we have create with pardot to track list of people and there activity on our website page). we can set "PAGE ACTION" in Pardot. From MARKETING---> AUTOMATION --> PAGE ACTION
-					So 
-					From "Page action" we can set the COMPLETION ACTION(Criteria and action)
+	SO BE CAUTIOUS TO CHECK/UNCHECK "AUTOMATICALLY CREATE PROSPECT IF THEY ARE CRETAED AS A LEAD OR CONTACT IN SALESFORCE" because we might have more then 10,000 what we are paying for.
+	SO the another way is 
+	GO TO CONNECTED SALESFORCE INSTANCE ---> CREATE A CAMPAIGN---> ADD Campaign Members ----> from Quick ACTION click ---> "ADD TO PARDOT LIST" button
+	
+## Pardot uses email id to identify the record in salesfoece(or ID)
+	IF we have a prospect in pardot connected to a lead in salesforce, Then even the lead got converted to contact it will automatically got connected to contact.
+	
+	WE Can see detail/ACTIVITY of a prospect from
+	Pardot ---> Prospect ---> Select name --> 
+		Ex: 1. how may time opens up the meail
+			2. since cookies are stored in our website we can even see which our website page prospect visited what time, how much time he spent
+				And based on website page visits(that we have create with pardot to track list of people and there activity on our website page). we can set "PAGE ACTION" in Pardot. From MARKETING---> AUTOMATION --> PAGE ACTION
+				So 
+				From "Page action" we can set the COMPLETION ACTION(Criteria and action)
+				
+				i.e Pardot gives us a "TRACKING CODE" and where ever we will add this script it will start tracking prospect based on that
+					PARDOT ---> MARKETING----> CAMPAIGNS --> click (VIEW TRACKING CODE)
 					
-					i.e Pardot gives us a "TRACKING CODE" and where ever we will add this script it will start tracking prospect based on that
-						PARDOT ---> MARKETING----> CAMPAIGNS --> click (VIEW TRACKING CODE)
-						
-	## PREVIOUSLY We can heve a pardot campaign seprately then of salesforce campaign and then we can connect them together from the automation rules
-			BUT NOW ther are we have to create CAMPAIGN in salesforce first and then these campaigns will automatically come to pardot and still we can use automation rule//(CONNECTED CAMPAIGNS) --- BENIFIT-----> automatically display ENGAGEMENT history back to salesforce Campaign
-		
+## PREVIOUSLY We can heve a pardot campaign seprately then of salesforce campaign and then we can connect them together from the automation rules
+		BUT NOW ther are we have to create CAMPAIGN in salesforce first and then these campaigns will automatically come to pardot and still we can use automation rule//(CONNECTED CAMPAIGNS) --- BENIFIT-----> automatically display ENGAGEMENT history back to salesforce Campaign
+	
 
 INTERFACE
 =========
@@ -60,30 +57,29 @@ Opportunity 			---	Opportunity in salesforce
 for rest objects we have to configure them ourself
 
 
-		### NOTES:
-				1. we can map standard and custom fields of salesforce to pardot.(give name to be displayed in pardot, sync with which salesforce field,datatype)
-				2. we can set the master value to be conider(Salesforce value or pardot value, or most Recent one), if prospect field value is differ from synced salesforce field value.
-				3.  By default who everown the Contact/Lead in salesforce is going to own the Prospect in PARDOT
-				4. 
-				
-				
-				
+	### NOTES:
+			1. we can map standard and custom fields of salesforce to pardot.(give name to be displayed in pardot, sync with which salesforce field,datatype)
+			2. we can set the master value to be conider(Salesforce value or pardot value, or most Recent one), if prospect field value is differ from synced salesforce field value.
+			3.  By default who everown the Contact/Lead in salesforce is going to own the Prospect in PARDOT
+			4. 
+			
+			
+			
 ## Automation can be set in 2 level in pardot:
-   1. Set automation from EMAIL TEMPLATES Itself ex: what happen when a person open an email, or clicks on an email does it send them another email or assign ask for CRM user who owns the contact in salesforce.
-   2. Pardot ---> Marketing --> Automation ---> Automation rule(Like workflow in salesforce) ---> Add critarea and actions for any or all email templetes
-		## once AUTOMATION RULE is created by default it is PAUSED state and we can resule it, BUT it is always good practice to check how many people comes under the critarea by going into the Automation rule we created---> Preview Matchs
-		because by default Automation rules are RETROACTIVE
-		
-   
+1. Set automation from EMAIL TEMPLATES Itself ex: what happen when a person open an email, or clicks on an email does it send them another email or assign ask for CRM user who owns the contact in salesforce.
+2. Pardot ---> Marketing --> Automation ---> Automation rule(Like workflow in salesforce) ---> Add critarea and actions for any or all email templetes
+	## once AUTOMATION RULE is created by default it is PAUSED state and we can resule it, BUT it is always good practice to check how many people comes under the critarea by going into the Automation rule we created---> Preview Matchs
+	because by default Automation rules are RETROACTIVE
+	
+
 
 
 @@@@ ENGAGEMENT STUDIO @@@@
 =============================
-	MARKETING ---> "ENGAGEMENT STUDIO"(journey Builder) for List of prospect
-	And 
-	That List is created under Marketing--> Segmentation --> LIST
-	OR
-	from salesforce campaign member List that is added on a pardot List
-	OR
-	DYNAMIC List(i.e based on criteria while creating list from MARKETING--> LIST--> NEW LIST--> dynamic list(checkbox))
-	
+MARKETING ---> "ENGAGEMENT STUDIO"(journey Builder) for List of prospect
+And 
+That List is created under Marketing--> Segmentation --> LIST
+OR
+from salesforce campaign member List that is added on a pardot List
+OR
+DYNAMIC List(i.e based on criteria while creating list from MARKETING--> LIST--> NEW LIST--> dynamic list(checkbox))
