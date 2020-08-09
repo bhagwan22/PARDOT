@@ -1,0 +1,87 @@
+
+
+										@@@@ PARDOT SETTING AND SERVICES  @@@@@
+														
+				(*) PARDOT PROSPECT CAN CONNECT TO THE SALESFORCE LEAD OR CONTACTS. also to opportunity contact role
+				
+				(*) Do Not Track (DNT) Heade  	--  Controls how Pardot deals with Do Not Track settings in prospect browsers.
+				
+				(*) Max Tracking Cookie Duration (days)	--	Lets you adjust the duration of Pardot tracking cookies to anywhere from 180 and 3,650 days
+
+				(*) Auto-fill Prospect Location Data from IP Address   ---  When this setting is enabled, Pardot auto-fills Country, State, and Canadian Province on a prospect record, based on GeoIP information.
+																			
+																			
+				
+				(*) Drip/Engagement Programs:		--  Controls whether a prospect can receive emails that use the same email templates more than once.
+				
+				(*) Product and Service Notifications  --  Lists the points of contact for product and service notifications from Pardot.
+				
+				
+										-----------------@@@@ Default Field Settings @@@@-----------------
+										
+			
+				(@) Sync Behavior  -->  If you’re using Salesforce, this option controls your field's sync behavior.
+				
+				(@) Salesforce Field Name  --->  Syncs the field with a Salesforce field. Default fields are automatically mapped.
+				
+				(@)  Record and display multiple responses  ===>  Allows multiple values to be stored in the field as a list. The most recent value appears at the bottom.
+				
+				
+				
+				
+				(###) PROSPECT DATATYPES:
+				
+					1. TEXT
+					2. NUMBER
+					3. DATE
+					4. CHECKBOX
+					5. RADIO BUTTON
+					6. TEXTAREA
+					7. Dropdown--- PICKLIST
+					8. MULTISELECT
+					9. Hidden	Invisible field. Can capture data, but isn’t visible on forms.
+					10. CRM User	Connects to Salesforce users. Lets the CRM user be used as a Send From address. [[ NOTE: can not use this field in patdot form ]]
+
+				
+															
+													-------XXXX-------------@@@@ PARDOT SALESFORCE SYNC @@@@ --------------XXXX-----------
+			
+``````			(##) WHEN SYNC BEHAVIOR SET TO USE Pardot’s Value:--
+					(*) If Pardot and Salesforce field values differ when synced, Pardot’s value overwrites the value in Salesforce.
+					(*) When a value in Pardot is empty and the value in Salesforce is not, the Salesforce field value overwrites the empty value.
+					
+``````			(##) WHEN SYNC BEHAVIOR SET TO USE SALESFORCE VALUE:--
+					(*) If the field of rocord in salesforce and pardot differ then the value from most recelty updated(in sf or pardot) record will replace the corrosponding value  
+						in salesforce or pardot.
+					
+					
+						
+						
+`````` 			(##) The "Do Not Email" and "Opted Out" options on a prospect record suppress a prospect from receiving emails from Pardot. Different actions select these options.
+					  
+					  (*) Do Not Email is selected in a prospect’s record when the prospect:
+						1. Has a hard bounce or five soft bounces.
+						2. Is imported as opted out.
+						3. Is opted out in Salesforce.
+						4. Is manually opted out in Pardot.
+						
+				[[[[[ NOTE: The Do Not Email field doesn’t map to a Salesforce field by default. 
+							However, when the Overwrite Prospect Opted Out field setting is enabled, opting out a prospect in either Salesforce or Pardot selects Do Not Email.  ]]]]
+				
+				
+						(*) Prospect Opted Out is marked in a prospect’s record when the prospect:
+
+							1. Clicks the unsubscribe link in a Pardot email or email preference page.
+							2. Reports an email as spam.
+							3. Is imported as opted out.
+							4. Is manually opted out in Pardot.
+							
+				
+						(*) When the Overwrite Prospect Opted Out field setting is enabled, keep these points in mind:
+
+							Opting out a prospect in Salesforce or Pardot selects the Do Not Email field upon sync.
+							If Do Not Email and Prospect Opted Out are selected, opting that prospect in from Salesforce or Pardot deselects Do Not Email upon sync, unless Hard Bounced is marked on the prospect record.
+							If Do Not Email is selected, but Opted Out is not, syncing an opted-in prospect doesn’t deselect Do Not Email. 
+							However, manually opting a prospect in from Pardot does deselect Do Not Email.
+							
+					

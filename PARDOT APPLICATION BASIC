@@ -1,0 +1,62 @@
+
+
+
+											@@@@ PARDOT APPLICATION BASIC @@@@
+
+
+
+			(##)  Pardot navigation is divided into four main sections: Marketing, Prospects, Reports, and Admin.
+
+					(**) IN MARKETING:--  here we can use automation tools to segment our prospects, and build email templates, 
+											forms, landing pages, send emails, monitor your social platforms, and create marketing content.
+
+				
+
+					(*)  Prospects tab: is where we access records for the prospects in our account. 
+										our Prospect List contains every prospect in your account. we can also group prospects into accounts under Prospect Accounts. 
+										Under One-to-One Emails, we can send an individual email to a single prospect. 
+										Finally, we can monitor your website’s page views and individual visits under Visitors.
+
+					(*) Report:-- Use this tab to monitor the progress and health of your marketing efforts.
+
+
+					(**)  Admin tab:. Here we'll control our field settings, 
+									  create and sync custom objects, 
+									  set up your email authentication protocols, 
+									  import users and maintain your account security.
+
+
+
+			(##)  Every Pardot account comes with 4 default USER ROLES: 
+					1. Administrator 
+					2. Marketing User (one of Pardot’s default user roles)
+					3. Sales Manager
+					4. and Sales User. 
+					
+				To create a new user   Admin > User Management > Users --->> Click + Add User(user email should be unique accross pardot user).
+				
+			(#)  we can choose different points of contact for each type of notification. 
+			
+			
+			(##) We can CREARE CUSTOM FIELDS in pardot if we want extra informations then stadard also this "CUSTOM FIELDS" is very useful For example, you may have some fields in 
+				 Sales Cloud that you want to also have in Pardot, and then sync the data between the two systems.
+				 i.e create a custom field in patdot and map it to the corrosponding field in salesforce.
+				 
+				  To do this, you’d activate your Salesforce connector, and then create a custom field in Pardot for each Sales Cloud field you want to relate to each other. 
+				  Custom fields are available across all our Pardot forms, automation and segmentation rules, and dynamic lists.
+			
+				EX1: TO CREATE CUSTOM FIELD AT PROSPECT LEVEL.
+				
+						Admin > Configure Fields > Prospect Fields ---- >>> Click + Add Custom Field----> ENTER NAME
+						
+			
+			
+			(****)	ONE OF THE MOST IMPORTANT FEATURE OF PARSOT IS IT CAN CONNECT EASILY TO ALL THE SOCIAL NETWORKING CHANNELS.
+					
+					EX1:
+						Admin > Connectors, and click + Add Connector --->Social Posting Connectors ----> click Twitter.
+				 
+				 
+			
+			
+			

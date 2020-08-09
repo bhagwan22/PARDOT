@@ -1,0 +1,46 @@
+
+
+														@@@ PARDOT BUILDING BLOCK @@@
+
+
+
+				[[[ NOTE: PARDOT is for b2b and is good to generate lead for the sales team also we use it when we plan to use, Sales Cloud or another CRM too. ]]]
+
+				(##)
+					 ONCE A PRODECT IS READY WE FOLLOW THE BELOW STEPS to generate a good lead for the sales team.
+							1. 	Demand generation
+							2.	Conversion
+							3.	Lead Nurturing
+							4.	Lead Qualification
+							5.	Assign to sales.
+
+
+				(##)
+					TECHNICAL TERMS:
+						(*)	Visitor:-	unknown person visiting our website And is on tracking in patdot
+						
+						(*) (visitor-to-prospect) when a visitor gives his contact details(email) into the form then we call it process of CONVERSION into PROSPECTS
+
+						(*)	known person called  PROSPECT i.e LEAD
+
+						(*) LEAD NURTURING MEAN:--	 Sending targeted messages at specific intervals based on a prospect's actions/activity(such as submitting a form, visiting a 	
+													 page, or clicking a link) whether or not they’ve met certain qualifying criteria.
+
+						(*) LEAD QUALIFICATION:---  this process of finding the gold needles in the haystack of prospects is called lead qualification.
+													threshold for when a prospect is ready to be assigned to a salesperson for them to follow up.
+
+													THERE ARE TWO METHODS TO CATEGORIES PROSPECTS:
+												
+													1. score(NUMERIC VALUE): indicating how interested they are in our product or service, based on specific actions the prospect takes.
+
+													2. grades(A,B,C ...):- indicating how well a prospect fits the profile of your ideal prospect.
+
+						(*) Pardot campaigns:-- Once your prospects are qualified, you can apply your threshold criteria to your prospects to assign them to your sales team.
+												These are typically the first marketing-related contact our prospect has with our company. 												
+												Pardot campaign as being equivalent to a Sales Cloud lead source.
+											[[[ NOTE: Pardot campaign are different then sales cloud campaign ]]]
+
+						
+
+
+		
